@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__d53caba6dcb3330083f2b8157cbc17db">d13caba6dbb33300b02f5fc74b9619dc</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"68a4a488e7104cf8811a5bead9f5b7d6","triggerType":"request","id":"68a4a488e7104cf8811a5bead9f5b7d6"}],"goals":[{"name":"primary","trigger_id":"68a4a488e7104cf8811a5bead9f5b7d6","nodes":[{"type":"StartGoal","goal_id":"c6db5c0741c7456d86f481fc9d4db29c","greeting_msg":{"type":"String","mode":"string","value":""},"id":"66d688b7c6e247efad4acc7c0aa5cf70","name":"Start"},{"type":"TerminateGoal","goal_id":"c6db5c0741c7456d86f481fc9d4db29c","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"e8130723c0c046a5a6235d36c28675fc","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","id":"b4cbb918f1184ac59043861aadf9bb2d","name":"hello","goal_id":"c6db5c0741c7456d86f481fc9d4db29c","variable_id":"48ee026849cf4a3b82d4e74ac103bf56","message":{"type":"String","mode":"string","value":"Select your car"},"optional":false},{"type":"OutputPrompt","value":{"type":"String","mode":"script","value":"(function execute() {\n    /* Return a quoted string.  For example:\n\n       var result;\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    return 'Selected car is '+vaInputs.hello;\n})()\n"},"id":"914f478e76aa46c68eebe08b92124289","name":"resp","goal_id":"c6db5c0741c7456d86f481fc9d4db29c"}],"edges":[{"type":"Edge","source_node_id":"66d688b7c6e247efad4acc7c0aa5cf70","target_node_id":"b4cbb918f1184ac59043861aadf9bb2d","id":"bbecdbdc8b7c4949bb35c32c63b8d6fb"},{"type":"Edge","source_node_id":"b4cbb918f1184ac59043861aadf9bb2d","target_node_id":"914f478e76aa46c68eebe08b92124289","id":"79e259eb0ab04f339e9572d9a1722d86"},{"type":"Edge","source_node_id":"914f478e76aa46c68eebe08b92124289","target_node_id":"e8130723c0c046a5a6235d36c28675fc","id":"c0b3ced5801c440aa851feea31047792"}],"id":"c6db5c0741c7456d86f481fc9d4db29c"}],"script_variables":[],"glide_variables":[{"type":"Choice","choices":[{"name":"i10","element":"i10"},{"name":"i20","element":"i20"},{"name":"i30","element":"i30"}],"id":"48ee026849cf4a3b82d4e74ac103bf56","name":"hello"},{"type":"Reference","table":"sys_user","id":"current-user","name":"user"}],"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","id":"08ebeb2adbb33300b02f5fc74b961901","name":"_PRVW__d53caba6dcb3330083f2b8157cbc17db","key_phrases":["needItTopic"]}</design_definition>
+        <design_topic_id>08ebeb2adbb33300b02f5fc74b961901</design_topic_id>
+        <name>_PRVW__d53caba6dcb3330083f2b8157cbc17db</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-13 12:19:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>953cef2adbb33300b02f5fc74b961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_953cef2adbb33300b02f5fc74b961904</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-13 12:19:35</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
